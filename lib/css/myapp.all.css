@@ -445,7 +445,9 @@ input[readonly="true"] {
   overflow-y: auto;
   overflow-x: hidden;
   border-right: 2px solid #777;
-  height: 100%;
+  top:82px;
+  bottom:55px;
+  /* height: 100%; */
 }
 
 #content {
@@ -456,8 +458,20 @@ input[readonly="true"] {
 
 #col2 {
   height: 100%;
-  height: auto;
+  /* height: auto; */
   position: relative;
+}
+
+#col2mask {
+  height: 100%;
+  width:100%;
+  /* height: auto; */
+  position: relative;
+  position: absolute;
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(100, 100, 100, 0.8);
+  background-color: rgba(50, 50, 50, 0.6);
 
 }
 
