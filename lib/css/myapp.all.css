@@ -118,7 +118,7 @@ input[readonly="true"] {
 
 
 #wrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* overflow: scroll; */
   background: white;
   position: relative;
@@ -435,17 +435,29 @@ input[readonly="true"] {
   border-top: 2px solid #04d;
   position: relative;
   top: 82px;
+  z-index: 100;
 }
 
 #fixed_sidebar {
   position: fixed;
+  position: absolute;
+  /* display:block; */
   left: 0;
   width: 21%;
   background-color: #222;
-  overflow-y: auto;
+  /* overflow-y: auto; */
+  /* overflow-y:scroll; */
+  /* overflow-y:visible; */
+  overflow-y:hidden;
+
   overflow-x: hidden;
+  /* overflow-x: visible; */
+  /* overflow-x: auto; */
+  overflow: hidden;
+
   border-right: 2px solid #777;
   top:82px;
+  top:0;
   bottom:55px;
   /* height: 100%; */
 }
