@@ -16,15 +16,18 @@
 
 #catlistdiv {
   /* font: 1.0em cambria; */
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-family: fantasy;
   font-family: 'Courier New', Courier, monospace;
   font-family: Courier, monospace;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-family: 'Arial Narrow', Arial, sans-serif;
-  font-family: Arial, sans-serif; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
+  /* font-family:'Times New Roman', Times, serif; */
+  font-family: Arial, sans-serif;
+  font: 0.8em Arial, sans-serif;
   /* font-weight: lighter;
   font-weight: 100;
   font-weight: normal; */
@@ -78,68 +81,36 @@
 
 #catlistdiv span.indx {
   display: inline-block;
-  width: 15px;
-  /* padding:0px 0px 0px 4px; */
-  padding-left: 4px;
+  width: 17px;
+  /* width: 20px; */
+  /* padding-left: 4px; */
+  /* padding: 0 4px; */
   text-align: center;
 }
 
-#catlistdiv .itemName {
-  padding-left: 3px;
-  padding-right: 3px;
+#catlistdiv .itemName, #catPopup {
+  /* padding-left: 3px; */
+  /* padding-right: 3px; */
+  padding: 0 3px;
   white-space: nowrap;
-  /* left:19px; 
-  z-index:10; */
-  /* overflow: visible; */
-  /* overflow: hidden; */
-
+  margin:0;
 }
-
-
-
-
-
-/* #catlistdiv #catPopup {
-  font-weight: bold;
-  position: absolute;
-  padding-left: 3px;
-  padding-right: 4px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  white-space: nowrap;
-  background-color: #eee;
-  text-decoration: underline;
-  z-index: 10;
-} */
-
 
 #catPopup {
-  /* font-weight: bold; */
   position: absolute;
-  padding-left: 3px;
-  padding-right: 4px;
-  /* border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; */
-  white-space: nowrap;
-  /* background-color: #eee; */
-  /* background-color: #222; */
   text-decoration: underline;
-  color:red;
-  z-index: 200;
-  overflow:visible;
+  background-color: #222;
+  color:#ddd;
+  z-index: 50;
 }
 
-
-
-#catlistdiv .chosen {
-  background-color: #464 !important;
-  color: white;
+.catchosen{
+  background-color: #037 !important;
+  color: white !important;
 }
 
 #col1{
   position:relative;
-  /* overflow-y:hidden; */
-  /* overflow-x:hidden; */
   overflow:hidden;
 }
 

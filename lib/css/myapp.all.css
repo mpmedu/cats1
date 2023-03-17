@@ -25,6 +25,10 @@ body {
   font: 0.8em Arial, Helvetica, sans-serif;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font: 0.9em 'Times New Roman', Times, serif;
+  font: 1em 'Times New Roman', Times, serif;
+  font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
   /* font-size: 1em; */
   /* min-height: 100%; */
 }
@@ -82,7 +86,7 @@ input[readonly="true"] {
 }
 
 #bodymask {
-  z-index: 7000;
+  z-index: 5000;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -96,17 +100,17 @@ input[readonly="true"] {
     msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
 */
 
-.box {
+/* .box {
   border: 2px solid black;
   position: absolute;
-  z-index: 9000;
+  z-index: 600;
   padding: 1em 2em;
-  background: #ddd;
+  background-color: #ddd;
   box-shadow: 0px 0px 6px 3px #222;
   -moz-box-shadow: 0px 0px 6px 3px #222;
   -webkit-box-shadow: 0px 0px 6px 3px #222;
   text-align: center;
-}
+} */
 
 
 
@@ -126,7 +130,7 @@ input[readonly="true"] {
   top: 82px;
   /* border: 2px solid blue;
   border: 2px solid #08f; */
-  z-index: 20;
+  z-index: 30;
 }
 
 #wrappermask {
@@ -135,19 +139,9 @@ input[readonly="true"] {
   background-color: rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.15);
-  z-index: 3000;
+  z-index: 25;
   left: 0;
   right: 0;
-}
-
-#dialogmask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(80, 80, 80, 0.4);
-  z-index: 3000;
 }
 
 #content {
@@ -223,56 +217,6 @@ input[readonly="true"] {
    XXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
-/*
-##############################################
-   the box and mask for messages and yesno
-##############################################
- */
-#msgbox {
-  /* for messages and yes/no box */
-  z-index: 10000;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 4px;
-  position: absolute;
-  padding: 1em 3em;
-  -webkit-box-shadow: 0px 0px 6px 3px #222;
-  -moz-box-shadow: 0px 0px 6px 3px #222;
-  box-shadow: 0px 0px 6px 3px #222;
-}
-
-#msgboxmask {
-  /* for messages and yes/no box */
-  z-index: 9500;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #aaa;
-  opacity: 0.6;
-}
-
-
-/*
-##############################################
-   the loading spinner and its mask
-##############################################
- */
-#loading {
-  z-index: 11000;
-  position: absolute;
-}
-
-#loadingmask {
-  z-index: 10500;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #555;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
-}
-
 
 
 /* edu styles 
@@ -282,9 +226,10 @@ input[readonly="true"] {
 #topdiv {
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 700;
   border-bottom: 2px solid #04d;
-  background-color: #222;
+  /* background-color: #222; */
+  background-color: #000;
   height: 80px;
 }
 
@@ -304,7 +249,7 @@ input[readonly="true"] {
   margin-top: 10px;
   position: absolute;
   /* padding-top: 10px; */
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 #topdiv #pageName {
@@ -320,16 +265,15 @@ input[readonly="true"] {
   color: #bbb;
   /* padding-top: 23px; */
   padding-right: 10px;
+  padding:0 10px;
   white-space: nowrap;
   /* overflow: auto; */
 }
 
 #topmenucontainer {
-  margin-top: 25px;
-  padding-top: 7px;
+  margin-top: 30px;
   background-color: #222;
   position: absolute;
-  z-index: 130;
 }
 
 
@@ -338,7 +282,7 @@ input[readonly="true"] {
   font: 0.5em Cambria, 'Times New Roman', serif;
   position: absolute;
   color: #cb4;
-  z-index: 130;
+  /* z-index: 130; */
 }
 
 /* menu items in topdiv */
@@ -346,25 +290,26 @@ input[readonly="true"] {
 #topmenumask {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  z-index: 6000;
+  z-index: 750;
 }
 
 
 #topdiv #theMenu {
   list-style: none;
-  z-index: 5000;
   position: relative;
+  background-color: #000;
 }
 
 #topdiv .menu {
-  font: 12px/16px Geneva, Arial, "Helvetica Neue", Helvetica, Cambria, sans-serif;
+  /* font: 12px/16px Geneva, Arial, "Helvetica Neue", Helvetica, Cambria, sans-serif; */
+  font: 0.9em Cambria, sans-serif;
   display: inline-block;
   position: relative;
   cursor: pointer;
   color: #ddd;
   color: #ccc;
   border: 1px solid white;
-  z-index: 12;
+  /* z-index: 12; */
   padding: 6px 11px;
   padding: 4px 11px;
 }
@@ -392,7 +337,7 @@ input[readonly="true"] {
   /* border-top: 1px solid rgb(39, 161, 14);
   border-right: 1px solid rgb(39, 161, 14); */
   border: 1px solid #eee;
-  z-index: 5000;
+  z-index: 3000;
   background-color: #222;
 }
 
@@ -430,12 +375,13 @@ input[readonly="true"] {
 
 #bottomdiv {
   background-color: #222;
+  background-color: #000;
   color: #eee;
   padding: 1px 10px;
   border-top: 2px solid #04d;
   position: relative;
   top: 82px;
-  z-index: 100;
+  z-index: 30;
 }
 
 #fixed_sidebar {
@@ -487,92 +433,6 @@ input[readonly="true"] {
 
 }
 
-/* class for the categories and checklist dialogs, no longer checklist
-===================================== */
-/* .container_class {
-  position: absolute;
-  z-index: 9999;
-  border: 3px solid black;
-} */
-
-
-/* dialog for showing the categories
-===================================== */
-
-/* #catlist_container {
-  width: 410px;
-}
-
-#catlistDialog {
-  border: 2px solid #ccc;
-  overflow: auto;
-}
-
-.cat_name {
-  display: inline-block;
-  width: 285px;
-  overflow: hidden;
-  padding-left: 6px;
-}
-
-.numQs {
-  display: inline-block;
-  width: 40px;
-  padding-right: 15px;
-  text-align: right;
-}
-
-.selected_cb {
-  display: inline-block;
-  padding-left: 15px;
-} */
-
-
-/* style for the button in categories and checklist dialogs
- ============================================================*/
-/* button.butt_class1 {
-  padding: 2px;
-  margin: 5px;
-  float: right;
-} */
-
-/* the next two rules are for getting the number of questions and getting the time allowed and the audio volume
- ===========================================================================================*/
-/* .div_nq_ta_av {
-  position: absolute;
-  background-color: white;
-  border: solid 3px #000;
-  z-index: 9000;
-}
-
-.input_nq_ta {
-  width: 35px;
-  text-align: right;
-  padding-right: 3px;
-  background-color: #e6e6e6;
-  border: solid 2px #888;
-}
-
-.input_clb {
-  width: 85px;
-  padding-right: 3px;
-  background-color: #e6e6e6;
-  border: solid 2px #888;
-} */
-
-/* style for getting the key to unlock a restricted-access file
- ===============================================================*/
-/* .input_key {
-  width: 160px;
-  padding-right: 1px;
-  padding-left: 3px;
-  background-color: #eeeeee;
-  border: solid 2px #888;
-  font-weight: bold;
-  font-family: Cambria, 'Times New Roman';
-  font-size: 1.1em;
-} */
-
 /* styles for showing the information at start, ie startupbox - also used for the unlockbox
  ==============================================*/
 .boxHead1_class {
@@ -620,115 +480,3 @@ input[readonly="true"] {
   text-align: center;
 } */
 
-/* style for endbox
-====================== */
-/* #endbox {
-  z-index: 9000;
-  width: auto;
-  text-align: center;
-  background-color: #eee;
-} */
-
-
-/* 
----------------------------
-Styles for displaying the question and options.
----------------------------
- */
-
-/* .q {
-  padding: 1.4em;
-  padding-left: 2.6em;
-  padding-right: 3.2em;
-  display: table;
-}
-
-.qq {
-  padding: 0.4em;
-}
-
-.qt {
-  cursor: default;
-}
-
-.opts {
-  padding: 1em 3em;
-}
-
-.qo_cell_text {
-  white-space: pre-wrap;
-  padding-top: 12px;
-}
-
-.qo_cell_picture {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 15px;
-}
-
-.qo_outer_text {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 18px;
-}
-
-.n_cell {
-  font: 1.3em Cambria, 'Times New Roman', serif;
-  display: table-cell;
-  position: relative;
-  vertical-align: top;
-  padding-right: 8px;
-}
-
-.n_format {
-  padding: 3px 8px;
-  border: 4px solid;
-  margin: 0.2em 0em;
-  border-radius: 5px 5px;
-}
-
-.opt_class {
-  border-width: 2px 3px 3px 2px;
-  border-color: rgba(0, 0, 0, 0);
-  border-style: outset;
-  padding: 0.4em 0.9em;
-  margin-right: 1.5em;
-  display: table;
-  cursor: pointer;
-} */
-
-
-/* 
----------------------------
-Styles for message which displays while the DOM is loading.
----------------------------
- */
-
-#startupDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ccc;
-  position: absolute;
-  z-index: 20000;
-  width: 100%;
-  height: 100%;
-}
-
-#egg {
-  animation: changeFill 0.8s linear infinite alternate;
-}
-
-@keyframes changeFill {
-  0% {
-    fill: #222;
-    stroke: #000;
-    stroke-width: 10;
-  }
-
-  100% {
-    fill: #000;
-    stroke: #222;
-    stroke-width: 20;
-  }
-}
