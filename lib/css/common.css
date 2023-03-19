@@ -15,7 +15,8 @@ body {
 
 div,
 ul,
-p {
+p,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -52,6 +53,10 @@ body {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
+
+/* hr{
+  margin:0;
+} */
 
 
 /*    
@@ -122,10 +127,8 @@ body {
 }
 
 
-
-/* this is for contextPopup */
 #contextPopup {
-  border: 2px solid #fff;
+  border: 2px solid #eee;
   position: absolute;
   position: fixed;
   z-index: 700;
@@ -135,7 +138,10 @@ body {
 
 #contextPopup p {
   margin: 0.2em;
-  padding: 0.3em 0.4em;
+  padding: 0.1em 0.8em;
+  font-size: 0.9em;
+  font-size: 0.9rem;
+
 }
 
 #contextPopup p:hover {

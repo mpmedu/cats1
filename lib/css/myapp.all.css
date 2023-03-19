@@ -22,11 +22,11 @@ p {
 
 body {
   position: relative;
-  font: 0.8em Arial, Helvetica, sans-serif;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font: 0.9em 'Times New Roman', Times, serif;
-  font: 1em 'Times New Roman', Times, serif;
+  /* font: 0.8em Arial, Helvetica, sans-serif; */
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font: 0.9em 'Times New Roman', Times, serif; */
+  /* font: 1em 'Times New Roman', Times, serif; */
   font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
   /* font-size: 1em; */
@@ -75,8 +75,11 @@ body {
 .textinput {
   color: black;
   width: 95%;
-  font-family: Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
+  /* font-family: Cambria, "Times New Roman", Times, serif; */
+  font-family: Arial, sans-serif;
+  /* font-size: 1.05em; */
+  /* font-size: 1em; */
+  font-size: 0.9em;
   border: 1px solid #666;
   padding-left: 3px;
 }

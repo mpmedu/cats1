@@ -17,17 +17,19 @@
 #catlistdiv {
   /* font: 1.0em cambria; */
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-family: 'Courier New', Courier, monospace;
   font-family: Courier, monospace;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-family: 'Arial Narrow', Arial, sans-serif;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; */
   /* font-family:Georgia, 'Times New Roman', Times, serif; */
   /* font-family:'Times New Roman', Times, serif; */
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   font-family: Arial, sans-serif;
-  font: 0.8em Arial, sans-serif;
+  /* font: 0.8em Arial, sans-serif; */
   /* font-weight: lighter;
   font-weight: 100;
   font-weight: normal; */
@@ -41,6 +43,7 @@
   line-height: 16px;
   /* line-height: 12px; */
   /* line-height: 14px; */
+  line-height: 15px;
   margin: 0 5% 10px 4%;
   position: relative;
   width: 90%;
@@ -61,6 +64,7 @@
 }
 
 #catlistdiv div.items {
+
   margin-bottom: -1px;
   padding: 3px 8px 3px 0px;
   position: relative;
@@ -89,6 +93,8 @@
 }
 
 #catlistdiv .itemName, #catPopup {
+  font: 0.8em Arial, sans-serif;
+
   /* padding-left: 3px; */
   /* padding-right: 3px; */
   padding: 0 3px;
@@ -168,3 +174,17 @@ ul.ul_style li {
   width: 160px;
 }
 
+/* .makeVisible{
+  overflow-x:visible;
+}
+
+#fixed_sidebar,
+#col1,
+#catlistdiv,
+.subcatlistdiv,
+.alllevels,
+.items
+.itemName{
+  position:relative;
+  z-index: 10000;;
+} */
